@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de Idades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cálculo da Média de Idades</h1>
+    </header>
+    <main>
+        <div class="container">
+            <input type="number" id="numeroPessoas" placeholder="Digite o número de pessoas" required>
+            <button onclick="coletarIdades()">Coletar Idades</button>
+            <div id="idadesContainer" style="display: none;">
+                <h3>Insira as idades:</h3>
+                <div id="idadesInputs"></div>
+                <button onclick="calcularMediaIdade()">Calcular Média</button>
+            </div>
+            <p id="resultado"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
